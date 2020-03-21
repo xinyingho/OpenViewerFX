@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <moduleName>openviewerfx</moduleName>
         <mainClass>org.jpedal.examples.viewer.FXStartup</mainClass>
-        <javafx.version>13.0.1</javafx.version>
+        <javafx.version>14</javafx.version>
         <bouncycastle.version>1.64</bouncycastle.version>
     </properties>
 
@@ -183,7 +183,7 @@
             <plugin>
                 <groupId>org.moditect</groupId>
                 <artifactId>moditect-maven-plugin</artifactId>
-                <version>1.0.0.Beta2</version>
+                <version>1.0.0-negatron</version>
                 <executions>
                     <execution>
                         <id>add-module-info-to-deps</id>
