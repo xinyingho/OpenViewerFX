@@ -220,6 +220,9 @@
                                         org.jpedal.examples.viewer.res.tips.guifeatures;
                                         org.jpedal.examples.viewer.res.tips.info;
                                     </opens>
+                                    <provides>
+                                        javax.imageio.spi.ImageReaderSpi with org.jpedal.jbig2.jai.JBIG2ImageReaderSpi;
+                                    </provides>
                                 </moduleInfo>
                             </module>
                         </configuration>
