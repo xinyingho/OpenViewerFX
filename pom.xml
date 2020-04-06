@@ -96,14 +96,20 @@
                 <filtering>false</filtering>
                 <directory>src</directory>
                 <includes>
+                    <include>**/*.afm</include>
+                    <include>**/*.cfg</include>
                     <include>**/*.css</include>
                     <include>**/*.gif</include>
                     <include>**/*.html</include>
+                    <include>**/*.icm</include>
+                    <include>**/*.js</include>
                     <include>**/*.png</include>
                     <include>**/*.properties</include>
                     <include>**/*.svg</include>
+                    <include>**/*.txt</include>
                     <include>**/*.xml</include>
                     <include>**/*.xslt</include>
+                    <include>**/*.num</include>
                 </includes>
             </resource>
         </resources>
@@ -210,7 +216,7 @@
                                         !rhino;
                                         *;
                                     </requires>
-                                    <opens>
+                                    <opensResources>
                                         org.jpedal.examples.viewer.res;
                                         org.jpedal.examples.viewer.res.css;
                                         org.jpedal.examples.viewer.res.preferences;
@@ -219,7 +225,15 @@
                                         org.jpedal.examples.viewer.res.tips.forms;
                                         org.jpedal.examples.viewer.res.tips.guifeatures;
                                         org.jpedal.examples.viewer.res.tips.info;
-                                    </opens>
+                                        org.jpedal.international;
+                                        org.jpedal.jbig2.examples.viewer.res;
+                                        org.jpedal.objects.acroforms.res;
+                                        org.jpedal.objects.javascript;
+                                        org.jpedal.objects.javascript.jsobjects;
+                                        org.jpedal.res.cmm;
+                                        org.jpedal.res.pdf;
+                                        org.jpedal.res.pdf.defaults;
+                                    </opensResources>
                                     <provides>
                                         javax.imageio.spi.ImageReaderSpi with org.jpedal.jbig2.jai.JBIG2ImageReaderSpi;
                                     </provides>
