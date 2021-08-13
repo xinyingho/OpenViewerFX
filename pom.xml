@@ -14,7 +14,7 @@
         <moduleName>openviewerfx</moduleName>
         <mainClass>org.jpedal.examples.viewer.FXStartup</mainClass>
         <javafx.version>14.0.1</javafx.version>
-        <bouncycastle.version>1.64</bouncycastle.version>
+        <bouncycastle.version>1.67</bouncycastle.version>
     </properties>
 
     <organization>
