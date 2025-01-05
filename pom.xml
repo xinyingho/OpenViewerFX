@@ -13,8 +13,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <moduleName>openviewerfx</moduleName>
         <mainClass>org.jpedal.examples.viewer.FXStartup</mainClass>
-        <javafx.version>14.0.1</javafx.version>
-        <bouncycastle.version>1.64</bouncycastle.version>
+        <javafx.version>23.0.1</javafx.version>
+        <bouncycastle.version>1.75</bouncycastle.version>
     </properties>
 
     <organization>
@@ -45,22 +45,22 @@
         </dependency>
         <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcmail-jdk15on</artifactId>
+            <artifactId>bcmail-jdk18on</artifactId>
             <version>${bouncycastle.version}</version>
         </dependency>
         <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcpg-jdk15on</artifactId>
+            <artifactId>bcpg-jdk18on</artifactId>
             <version>${bouncycastle.version}</version>
         </dependency>
         <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcpkix-jdk15on</artifactId>
+            <artifactId>bcpkix-jdk18on</artifactId>
             <version>${bouncycastle.version}</version>
         </dependency>
         <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk15on</artifactId>
+            <artifactId>bcprov-jdk18on</artifactId>
             <version>${bouncycastle.version}</version>
         </dependency>
         
@@ -83,7 +83,7 @@
         <dependency>
             <groupId>org.mozilla</groupId>
             <artifactId>rhino</artifactId>
-            <version>1.7.11</version>
+            <version>1.7.13</version>
         </dependency>
     </dependencies>
 
@@ -118,16 +118,16 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.13.0</version>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>23</source>
+                    <target>23</target>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <goals>
@@ -148,7 +148,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.1</version>
+                <version>3.8.1</version>
                 <executions>
                     <execution>
                         <id>copy-libs</id>
@@ -184,7 +184,7 @@
             <plugin>
                 <groupId>org.moditect</groupId>
                 <artifactId>moditect-maven-plugin</artifactId>
-                <version>1.0.0.RC1</version>
+                <version>1.2.2.Final</version>
                 <executions>
                     <execution>
                         <id>add-module-info-to-deps</id>
@@ -275,10 +275,8 @@
                                 <module>${moduleName}/${mainClass}</module>
                             </launcher>
                             <stripDebug>true</stripDebug>
-                            <compression>2</compression>
-                            <no-header-files>true</no-header-files>
-                            <no-man-pages>true</no-man-pages>
                             <ignoreSigningInformation>true</ignoreSigningInformation>
+                            <jarInclusionPolicy>APP_WITH_DEPENDENCIES</jarInclusionPolicy>
                             <jdepsExtraArgs>
                                 <args>--strip-native-commands</args>
                                 <arg>--multi-release</arg>
