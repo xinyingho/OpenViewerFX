@@ -1311,6 +1311,7 @@ public class AcroRenderer{
      * @deprecated - getFormComponents(String objectName, ReturnValues value,int pageNumber) recommended
      * as much more flexible
      */
+    @Deprecated
     public PdfArrayIterator getAnnotsOnPage(final int page) {
         
         //check annots decoded - will just return if done

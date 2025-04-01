@@ -4002,6 +4002,7 @@ public class PdfGroupingAlgorithms {
 	 * Note: input variable page_number no longer functions due to refactoring. FindText functions for the currently decoded page.
 	 * @deprecated
 	 */
+    @Deprecated
     @SuppressWarnings("UnusedParameters")
     public final float[] findText(
 			final Rectangle searchArea,

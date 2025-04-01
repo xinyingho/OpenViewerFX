@@ -91,6 +91,7 @@ public class LogWriter
      * @deprecated - should not be used
      * @return 
      */
+    @Deprecated
     public static final boolean isOutput(){
         return verbose || logScanner!=null;
         

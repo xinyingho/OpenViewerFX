@@ -303,6 +303,7 @@ public interface DynamicVectorRenderer  {
      * @param i
      * @return 
      */
+        @Deprecated
 	Rectangle getArea(int i);
     
     int[] getAreaAsArray(int i);

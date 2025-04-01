@@ -727,6 +727,7 @@ public class GUIDisplay implements Display{
      * Please use public int[] getCursorBoxOnScreenAsArray() instead.
      * @deprecated on 04/07/2014
      */
+    @Deprecated
     @Override
     public Rectangle getCursorBoxOnScreen() {
         throw new UnsupportedOperationException("Please use public int[] getCursorBoxOnScreenAsArray() instead");
@@ -808,6 +809,7 @@ public class GUIDisplay implements Display{
      * updateCursorBoxOnScreen(int[] newOutlineRectangle, int outlineColor, int pageNumber,int x_size,int y_size) instead.
      * @deprecated
      */
+    @Deprecated
     @Override
     public void updateCursorBoxOnScreen(final Rectangle newOutlineRectangle, final Color outlineColor, final int pageNumber, final int x_size, final int y_size) {
         throw new UnsupportedOperationException("please use updateCursorBoxOnScreen(int[] newOutlineRectangle, int outlineColor, int pageNumber,int x_size,int y_size) instead");
@@ -828,6 +830,7 @@ public class GUIDisplay implements Display{
      * Please use setViewableArea(int[] viewport) instead.
      * @deprecated
      */
+    @Deprecated
     @Override
     public AffineTransform setViewableArea(final Rectangle viewport) throws PdfException {
         throw new UnsupportedOperationException("setViewableArea Not supported yet."); 

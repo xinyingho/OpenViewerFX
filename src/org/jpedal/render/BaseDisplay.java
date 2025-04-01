@@ -896,6 +896,7 @@ public abstract class BaseDisplay implements DynamicVectorRenderer {
      * @param i
      * @return 
      */
+    @Deprecated
     @Override
     public Rectangle getArea(final int i) {
 	return null;  //To change body of implemented methods use File | Settings | File Templates.

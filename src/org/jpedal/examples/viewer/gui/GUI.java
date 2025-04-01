@@ -202,6 +202,7 @@ public abstract class GUI implements GUIFactory {
      * @param item :: Key for the property
      * @param value :: New value for the property
      */
+    @Deprecated
     @SuppressWarnings("UnusedDeclaration")
     public void setProperties(final String item, final boolean value){
         properties.setValue(item, String.valueOf(value));

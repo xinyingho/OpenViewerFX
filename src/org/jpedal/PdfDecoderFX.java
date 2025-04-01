@@ -392,6 +392,7 @@ public class PdfDecoderFX extends Pane implements Printable, Pageable, PdfDecode
      * please use getPages().setViewableArea instead.
      * @deprecated
      */
+    @Deprecated
     @Override
     public AffineTransform setViewableArea(final Rectangle viewport) throws PdfException {
         
@@ -2074,6 +2075,7 @@ public class PdfDecoderFX extends Pane implements Printable, Pageable, PdfDecode
      * updateCursorBoxOnScreen(final int[] rectParams, final int outlineColor) instead
      * @deprecated
      */
+    @Deprecated
     @Override
     public final void updateCursorBoxOnScreen(final Rectangle newOutlineRectangle, final Color outlineColor) {
         

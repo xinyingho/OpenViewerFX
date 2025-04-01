@@ -311,6 +311,7 @@ public interface PdfDecoderInt {
      * updateCursorBoxOnScreen(final int[] rectParams, final int outlineColor) instead
      * @deprecated
      */
+    @Deprecated
     void updateCursorBoxOnScreen(Rectangle newOutlineRectangle, Color outlineColor);
     
     void updateCursorBoxOnScreen(int[] rectParams, int outlineColor);
@@ -374,6 +375,7 @@ public interface PdfDecoderInt {
      * please use getPages().setViewableArea instead.
      * @deprecated
      */
+    @Deprecated
     AffineTransform setViewableArea(Rectangle viewport) throws PdfException;
     
     boolean hasEmbeddedFonts();

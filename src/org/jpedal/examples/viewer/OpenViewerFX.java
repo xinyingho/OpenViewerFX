@@ -274,6 +274,7 @@ public class OpenViewerFX extends Viewer implements ViewerInt{
      * @deprecated
      * @param args Program arguments passed into the Viewer
      */
+    @Deprecated
     public OpenViewerFX(final String[] args) {
         this(null,args);
     }

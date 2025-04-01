@@ -3141,6 +3141,7 @@ import org.jpedal.utils.repositories.generic.Vector_Rectangle_Int;
      * @param i
      * @return 
      */
+    @Deprecated
     @Override
     public Rectangle getArea(final int i) {
         return new Rectangle(areas.elementAt(i)[0], areas.elementAt(i)[1],areas.elementAt(i)[2],areas.elementAt(i)[3]);
