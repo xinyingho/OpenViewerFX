@@ -14,7 +14,7 @@
         <moduleName>openviewerfx</moduleName>
         <mainClass>org.jpedal.examples.viewer.FXStartup</mainClass>
         <javafx.version>24</javafx.version>
-        <bouncycastle.version>1.75</bouncycastle.version>
+        <bouncycastle.version>1.80</bouncycastle.version>
     </properties>
 
     <organization>
@@ -118,10 +118,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
+                <version>3.14.0</version>
                 <configuration>
-                    <source>24</source>
-                    <target>24</target>
+                    <release>24</release>
                 </configuration>
             </plugin>
             <plugin>
